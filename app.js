@@ -10,7 +10,7 @@ var studentRouter = require('./routes/student');
 var app = express();
 
 // Intégration de la bdd
-var connectionString = "mongodb+srv://clement:<test>@clement.ktkid4w.mongodb.net/test";
+var connectionString = "mongodb+srv://clement:test@clement.ktkid4w.mongodb.net/test";
 var mongoDB = process.env.MONGODB_URI || connectionString;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.Promise = global.Promise;
